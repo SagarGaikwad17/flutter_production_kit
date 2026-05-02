@@ -1,5 +1,4 @@
 import 'package:flutter_production_kit/bootstrap/bootstrap_step.dart';
-import 'package:flutter_production_kit/core/errors/app_exception.dart';
 
 /// Sealed result type for the entire bootstrap sequence.
 ///
@@ -132,9 +131,7 @@ class ResolvedFeatureFlags {
 
   /// Creates flags from the env default values.
   /// Used as fallback when remote config is unavailable.
-  factory ResolvedFeatureFlags.fromDefaults(
-    covariant dynamic defaults, // typed FeatureFlagDefaults at runtime
-  ) {
+  factory ResolvedFeatureFlags.fromDefaults(dynamic defaults) {
     return const ResolvedFeatureFlags(
       enableNewOnboarding: false,
       enableBiometricLogin: false,

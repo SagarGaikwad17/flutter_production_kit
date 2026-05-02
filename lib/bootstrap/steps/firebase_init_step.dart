@@ -1,5 +1,4 @@
 import 'package:firebase_core/firebase_core.dart';
-import 'package:flutter/foundation.dart';
 import 'package:flutter_production_kit/bootstrap/bootstrap_context.dart';
 import 'package:flutter_production_kit/core/errors/app_exception.dart';
 import 'package:flutter_production_kit/core/logging/app_logger.dart';
@@ -19,7 +18,6 @@ class FirebaseInitStep {
   static const String _tag = 'FirebaseInitStep';
 
   Future<void> execute(BootstrapContext ctx) async {
-    final flavor = FlavorConfig.instance.flavor;
     final expectedProjectId = FlavorConfig.instance.env.firebase.projectId;
 
     AppLogger.info(_tag, 'Initializing Firebase for project: $expectedProjectId');

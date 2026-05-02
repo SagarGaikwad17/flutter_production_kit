@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:logger/logger.dart';
 import 'package:flutter_production_kit/core/logging/log_level_policy.dart';
 import 'package:flutter_production_kit/flavors/flavor_config.dart';

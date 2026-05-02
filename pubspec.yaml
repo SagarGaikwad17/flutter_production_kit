@@ -25,6 +25,8 @@ dependencies:
 
   # ── Network / Connectivity ──────────────────────────────────────────────────
   connectivity_plus: ^6.1.4
+  http: ^1.2.2
+  crypto: ^3.0.3
 
   # ── App Info ────────────────────────────────────────────────────────────────
   package_info_plus: ^8.3.0
