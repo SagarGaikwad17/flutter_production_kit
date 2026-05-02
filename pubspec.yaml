@@ -1,0 +1,62 @@
+name: flutter_production_kit
+description: Enterprise-grade Flutter production foundation. Not a tutorial app.
+version: 1.0.0+1
+publish_to: none
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # ── Dependency Injection ────────────────────────────────────────────────────
+  get_it: ^8.0.0
+  injectable: ^2.4.4
+
+  # ── Firebase ────────────────────────────────────────────────────────────────
+  firebase_core: ^3.12.0
+  firebase_crashlytics: ^4.3.4
+  firebase_remote_config: ^5.4.4
+  firebase_auth: ^5.5.1
+
+  # ── Secure Storage ──────────────────────────────────────────────────────────
+  flutter_secure_storage: ^9.2.4
+
+  # ── Network / Connectivity ──────────────────────────────────────────────────
+  connectivity_plus: ^6.1.4
+
+  # ── App Info ────────────────────────────────────────────────────────────────
+  package_info_plus: ^8.3.0
+
+  # ── Logging ─────────────────────────────────────────────────────────────────
+  logger: ^2.5.0
+
+  # ── Router ──────────────────────────────────────────────────────────────────
+  go_router: ^14.8.1
+
+  # ── Immutable Models (code-gen) ──────────────────────────────────────────────
+  freezed_annotation: ^2.4.4
+  json_annotation: ^4.9.0
+
+  # ── Cupertino Icons ─────────────────────────────────────────────────────────
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # ── Code Generation ─────────────────────────────────────────────────────────
+  build_runner: ^2.4.13
+  injectable_generator: ^2.6.2
+  freezed: ^2.5.7
+  json_serializable: ^6.9.4
+
+  # ── Linting ──────────────────────────────────────────────────────────────────
+  flutter_lints: ^5.0.0
+
+  # ── Testing ──────────────────────────────────────────────────────────────────
+  mocktail: ^1.0.4
+
+flutter:
+  uses-material-design: true
